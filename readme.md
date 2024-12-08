@@ -9,10 +9,5 @@ brew install ripgrep
 
 # TODO
 
-- [ ] Put .zshrc on github
-- [ ] Put nvim config on github
-- [x] Ipmplement linting
-- [x] Implement prettier formating
-- [ ] Define better pattern for find_files
+- [ ] Define better pattern for find_files (ignore node_modules, include .env/*)
 - [ ] When browsing files, separate directories and files
-- [x] When browsing files, sort alphabeticaly
