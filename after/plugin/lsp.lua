@@ -18,11 +18,6 @@ lspconfig.docker_compose_language_service.setup({})
 lspconfig.dockerls.setup({})
 
 -- javascript / typescript
--- lspconfig.eslint.setup({
--- 	filetypes = {
--- 		"javascript",
--- 	},
--- })
 lspconfig.svelte.setup({
 	filetypes = {
 		"svelte",
@@ -32,6 +27,8 @@ lspconfig.ts_ls.setup({
 	filetypes = {
 		"javascript",
 		"typescript",
+		"typescriptreact",
+		"typescript.tsx",
 	},
 })
 
