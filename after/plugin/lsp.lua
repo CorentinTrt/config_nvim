@@ -65,3 +65,10 @@ vim.tbl_deep_extend("keep", lspconfig, {
 		root_dir = vim.fn.getcwd(),
 	},
 })
+
+-- terraform
+lspconfig.terraformls.setup({
+	filetypes = {
+		"terraform",
+	},
+})
