@@ -6,6 +6,6 @@ lint.linters_by_ft = {
 	php = { "phpstan" },
 	proto = { "buf" },
 	svelte = { "eslint_d" },
-	tf = { "tflint" },
+	terraform = { "tflint" },
 	typescritpt = { "eslint_d" },
 }

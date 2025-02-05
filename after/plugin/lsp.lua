@@ -17,6 +17,13 @@ lspconfig.buf_ls.setup({})
 lspconfig.docker_compose_language_service.setup({})
 lspconfig.dockerls.setup({})
 
+-- helm
+lspconfig.snyk_ls.setup({
+	filetypes = {
+		"helm",
+	},
+})
+
 -- javascript / typescript
 lspconfig.svelte.setup({
 	filetypes = {
@@ -31,6 +38,9 @@ lspconfig.ts_ls.setup({
 		"typescript.tsx",
 	},
 })
+
+-- json
+lspconfig.jsonls.setup({})
 
 -- lua
 lspconfig.lua_ls.setup({
@@ -52,9 +62,6 @@ lspconfig.lua_ls.setup({
 	},
 })
 
--- json
-lspconfig.jsonls.setup({})
-
 -- php
 lspconfig.intelephense.setup({})
 vim.tbl_deep_extend("keep", lspconfig, {
@@ -67,8 +74,4 @@ vim.tbl_deep_extend("keep", lspconfig, {
 })
 
 -- terraform
-lspconfig.terraformls.setup({
-	filetypes = {
-		"terraform",
-	},
-})
+lspconfig.terraformls.setup({})

@@ -9,6 +9,7 @@ conform.setup({
 		php = { "php-cs-fixer" },
 		proto = { "buf" },
 		svelte = { "prettierd", "prettier", stop_after_first = true },
+		terraform = { "tflint" },
 		typescript = { "prettierd", "prettier", stop_after_first = true },
 	},
 	format_on_save = {
