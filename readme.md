@@ -2,10 +2,13 @@
 
 ## Installation
 
-1. Install `ripgrep`  to enable `live_grep` search from telescope
+1. Install `ripgrep` to enable `live_grep` search from telescope
+
 ```bash
 brew install ripgrep
 ```
+
+1. Install SpaceMono Nerd Mono font
 
 # TODO
 
