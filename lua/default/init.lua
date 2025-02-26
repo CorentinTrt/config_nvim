@@ -1,5 +1,0 @@
-require("default.format")
-require("default.packer")
-require("default.lint")
-require("default.remap")
-require("default.set")
