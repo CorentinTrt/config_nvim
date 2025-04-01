@@ -69,15 +69,21 @@ return {
     end,
   },
 
-  -- mini-animate
+  -- smear-cursor (cursor animation)
   {
-    'echasnovski/mini.animate',
+    "sphamba/smear-cursor.nvim",
     event = { "BufReadPre", "BufNewFile" },
     opts = function()
-      return {}
+      return {
+        smear_between_buffers = true,
+        smear_between_neighbor_lines = true,
+        scroll_buffer_space = true,
+        legacy_computing_symbols_support = false,
+        smear_insert_mode = true,
+      }
     end,
     config = function(_, opts)
-      require('mini.animate').setup(opts)
+      require("smear_cursor").setup(opts)
     end
   },
 

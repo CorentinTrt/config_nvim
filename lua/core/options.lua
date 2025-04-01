@@ -46,6 +46,8 @@ opt.spelllang = { "en" }
 opt.swapfile = false
 opt.tabstop = 2 -- Number of spaces tabs count for
 opt.termguicolors = true
+opt.title = true
+opt.titlestring = "NVIM - /%{fnamemodify(getcwd(), ':t')}"
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
 opt.winbar = "%=%m %f" -- enable file path on the top right corner

@@ -13,6 +13,7 @@ brew install ripgrep
 
 ### Functionalities
 
+- [ ] Improve LSP management
 - [ ] Setup undo-tree
 
 ### Conveniences
@@ -20,7 +21,7 @@ brew install ripgrep
 - [ ] Setup treesitter-textobject
 - [ ] Setup treesitter-context
 - [ ] Setup which-key
-- [ ] Setup folding
+- [ ] Setup code folding
 - [ ] Setup mini.comment
 - [ ] Improve snippets (tab capabilities)
 - [ ] Modify keymaps for neo-tree (hjkl to navigate)
@@ -28,6 +29,7 @@ brew install ripgrep
 ### UI
 
 - [x] Setup mini.anim
+- [ ] Change animation plugin
 - [x] Setup start screen
 - [ ] Fix cursorline (check with theme, might comes from transparancy)
 - [ ] Setup icons for warnings, errors, etc.

@@ -16,12 +16,23 @@ return {
     dependencies = {
       "williamboman/mason.nvim",
     },
+    opts = function()
+      return {
+        ensure_installed = {
+          "lua_ls",
+          "ts_ls",
+        }
+      }
+    end,
     config = function(_, opts)
       require("mason-lspconfig").setup(opts)
 
       local handlers = {
         function(server_name)
-          require("lspconfig")[server_name].setup {}
+          require("lspconfig")[server_name].setup({})
+        end,
+        ["typescript-language-server"] = function()
+          require("lspconfig").ts_ls.setup {}
         end,
       }
 
@@ -35,12 +46,12 @@ return {
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     dependencies = {
       "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim"
+      "williamboman/mason-lspconfig.nvim",
     },
-    opts = function()
-    end,
+    opts = function() end,
 
-    config = function(_, opts) end,
+    config = function(_, opts)
+    end,
   },
 
   -- treesitter
@@ -69,6 +80,7 @@ return {
         "printf",
         "query",
         "regex",
+        "svelte",
         "tsx",
         "typescript",
         "vim",
@@ -79,6 +91,6 @@ return {
     },
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
-    end
-  }
+    end,
+  },
 }

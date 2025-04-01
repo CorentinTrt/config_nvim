@@ -14,8 +14,8 @@ vim.keymap.set("n", "<leader>w", "<C-w>")
 
 vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<CR>")
-vim.keymap.set("n", "<leader>b]", "<cmd>BufferLineMoveNext<CR>")
-vim.keymap.set("n", "<leader>b[", "<cmd>BufferLineMovePrev<CR>")
+vim.keymap.set("n", "<C-l>", "<cmd>BufferLineMoveNext<CR>")
+vim.keymap.set("n", "<C-h>", "<cmd>BufferLineMovePrev<CR>")
 vim.keymap.set("n", "<leader>bc", "<cmd>BufferCloseCurrent<CR>")
 
 -- yank & delete
