@@ -11,7 +11,10 @@ return {
       },
       formatters_by_ft = {
         lua = { "stylelua" },
+        javascript = { "prettier" },
+        svelte = { "prettier" },
         terraform = { "tflint" },
+        typescript = { "prettier" },
       },
     }
   end,

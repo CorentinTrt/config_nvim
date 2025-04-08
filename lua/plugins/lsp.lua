@@ -34,6 +34,11 @@ return {
         ["typescript-language-server"] = function()
           require("lspconfig").ts_ls.setup {}
         end,
+        ["css-languageserver"] = function()
+          require("cssls").ts_ls.setup {
+            filetypes = { "css", "scss", "less", "svelte" }
+          }
+        end,
       }
 
       require("mason-lspconfig").setup_handlers(handlers)
@@ -80,6 +85,7 @@ return {
         "printf",
         "query",
         "regex",
+        "scss",
         "svelte",
         "tsx",
         "typescript",
