@@ -24,12 +24,12 @@ brew install ripgrep
 - [ ] Setup code folding
 - [ ] Setup mini.comment
 - [ ] Improve snippets (tab capabilities)
-- [ ] Modify keymaps for neo-tree (hjkl to navigate)
+- [x] Modify keymaps for neo-tree (hjkl to navigate)
 
 ### UI
 
-- [x] Setup mini.anim
-- [ ] Change animation plugin
+- [x] Setup mini.anim (removed animation pluging because of perf issues)
+- [x] Change animation plugin (removed animation pluging because of perf issues)
 - [x] Setup start screen
 - [ ] Fix cursorline (check with theme, might comes from transparancy)
 - [ ] Setup icons for warnings, errors, etc.

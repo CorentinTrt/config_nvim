@@ -9,8 +9,6 @@ return {
       "MunifTanjim/nui.nvim",
     },
     opts = {
-      sources = { "filesystem", "buffers", "git_status" },
-      open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
       filesystem = {
         bind_to_cwd = false,
         filtered_items = {
@@ -31,6 +29,14 @@ return {
           },
         },
       },
+      open_files_do_not_replace_types = { "terminal", "Trouble", "trouble", "qf", "Outline" },
+      sources = { "filesystem", "buffers", "git_status" },
+      window = {
+        mappings = {
+          ["l"] = "open",
+          ["h"] = "close_node",
+        }
+      }
     },
   },
 
