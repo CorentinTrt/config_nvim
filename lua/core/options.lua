@@ -21,7 +21,10 @@ opt.fillchars = {
   diff = "╱",
   eob = " ",
 }
+opt.foldcolumn = "1"
+opt.foldenable = true
 opt.foldlevel = 99
+opt.foldlevelstart = 99
 opt.hlsearch = false
 opt.inccommand = "nosplit" -- preview incremental substitute
 opt.incsearch = true
@@ -51,13 +54,3 @@ opt.titlestring = "NVIM - /%{fnamemodify(getcwd(), ':t')}"
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
 opt.winbar = "%=%m %f" -- enable file path on the top right corner
-
-if vim.fn.has("nvim-0.10") == 1 then
-  opt.smoothscroll = true
-  opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
-  opt.foldmethod = "expr"
-  opt.foldtext = ""
-else
-  opt.foldmethod = "indent"
-  opt.foldtext = "v:lua.require'lazyvim.util'.ui.foldtext()"
-end

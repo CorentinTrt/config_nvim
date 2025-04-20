@@ -20,7 +20,7 @@ brew install ripgrep
 
 - [ ] Setup treesitter-textobject
 - [ ] Setup treesitter-context
-- [ ] Setup which-key
+- [x] Setup which-key
 - [ ] Setup code folding
 - [ ] Setup mini.comment
 - [ ] Improve snippets (tab capabilities)
