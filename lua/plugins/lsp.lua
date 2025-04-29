@@ -31,13 +31,13 @@ return {
         function(server_name)
           require("lspconfig")[server_name].setup({})
         end,
-        ["typescript-language-server"] = function()
-          require("lspconfig").ts_ls.setup {}
-        end,
         ["css-languageserver"] = function()
           require("cssls").ts_ls.setup {
             filetypes = { "css", "scss", "less", "svelte" }
           }
+        end,
+        ["typescript-language-server"] = function()
+          require("lspconfig").ts_ls.setup {}
         end,
       }
 
@@ -64,7 +64,7 @@ return {
     priority = 1000,    -- needs to be loaded in first
     config = function()
       require('tiny-inline-diagnostic').setup()
-      vim.diagnostic.config({ virtual_text = false })   -- Only if needed in your configuration, if you already have native LSP diagnostics
+      vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
     end
   },
 
@@ -96,6 +96,7 @@ return {
         "regex",
         "scss",
         "svelte",
+        "terraform",
         "tsx",
         "typescript",
         "vim",
