@@ -1,0 +1,41 @@
+-- treesitter (abtract tree)
+return {
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  event = { "BufReadPre", "BufNewFile" },
+  lazy = vim.fn.argc(-1) == 0,
+  opts = {
+    highlight = { enable = true },
+    indent = { enable = true },
+    ensure_installed = {
+      "bash",
+      "diff",
+      "gitignore",
+      "html",
+      "javascript",
+      "jsdoc",
+      "json",
+      "jsonc",
+      "lua",
+      "luadoc",
+      "luap",
+      "markdown",
+      "markdown_inline",
+      "printf",
+      "query",
+      "regex",
+      "scss",
+      "svelte",
+      "terraform",
+      "tsx",
+      "typescript",
+      "vim",
+      "vimdoc",
+      "xml",
+      "yaml",
+    },
+  },
+  config = function(_, opts)
+    require("nvim-treesitter").setup(opts)
+  end,
+}

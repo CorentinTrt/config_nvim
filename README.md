@@ -9,6 +9,10 @@ brew install ripgrep
 ```
 3. Install SpaceMono Nerd Mono font (or any nerd font)
 
+## Utilization
+
+`lazy = true` is set by default. We we need to specify the trigger for each new plugin or disabling lazy loading for this specific plugins. This lighten the neovim starting load and gives us more control over plugin's loading behaviour.
+
 ## TODO
 
 ### Functionalities
